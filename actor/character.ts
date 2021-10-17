@@ -1,6 +1,6 @@
 import { Pawn, SerializedPawn } from './pawn'
-import { Deprecable } from './base/deprecable'
-import { CharacterStat } from './base/stat'
+import { Deprecable } from '../base/deprecable'
+import { CharacterStat } from '../base/stat'
 
 export interface CharacterStats {
   END: CharacterStat;

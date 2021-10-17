@@ -75,10 +75,29 @@ export class CharacterStat {
   }
 
   public roll(): Roll {
+    // TODO:: Implement game mode here to provide base roll
     return new Roll('3d6', this._value);
   }
 
   public toString(): string {
     return `${this.name}:${this.value}`
+  }
+}
+
+export interface SerializedCharacterStats {
+
+}
+
+export class CharacterStats {
+  END: CharacterStat;
+  STR: CharacterStat;
+  AGI: CharacterStat;
+  RES: CharacterStat;
+  ALT: CharacterStat;
+  MAG: CharacterStat;
+  MAR: CharacterStat;
+
+  public serialize(): SerializedCharacterStats {
+    return null;
   }
 }
